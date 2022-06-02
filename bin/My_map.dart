@@ -10,7 +10,6 @@ void main(){
   print(values);
   print(values['Trat']);
   values['values']=2600;
-
   //print(object);
   print("----------------------");
 
@@ -18,13 +17,14 @@ void main(){
   print(fruit);
   print("----------------------");
 
-
   print(volleyball);
-  print("----------------------");
-  print('ตุรกี คะแนน :  ${volleyball['ตุรกี']}');
-  print('ไทย คะแนน :  ${volleyball['ไทย']}');
-  print('ญี่ปุน คะแนน :  ${volleyball['ญี่ปุน']}');
-  print('เซอร์เบีย คะแนน :  ${volleyball['เซอร์เบีย']}');
-  print('สหรัฐอเมริกา คะแนน :  ${volleyball['สหรัฐอเมริกา']}');
+  volleyball.forEach((key, value) {
+    print('${key} คะแนน : ${value}');
+  });
+  // print('ตุรกี คะแนน :  ${volleyball['ตุรกี']}');
+  // print('ไทย คะแนน :  ${volleyball['ไทย']}');
+  // print('ญี่ปุน คะแนน :  ${volleyball['ญี่ปุน']}');
+  // print('เซอร์เบีย คะแนน :  ${volleyball['เซอร์เบีย']}');
+  // print('สหรัฐอเมริกา คะแนน :  ${volleyball['สหรัฐอเมริกา']}');
 
 }
